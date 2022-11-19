@@ -1,0 +1,32 @@
+1.	Inicio
+2.	tipoCliente, x(100) [{a-z}, {A-Z}, {BS}]
+3.	nombre, x(100) [{a-z}, {A-Z}, {BS}]
+4.	costoCompu, d[0-n]
+5.	descuento, d[0-n]
+6.	total, i[0-n]
+7.	repetición, i[0-7] <-- 0
+8.	mensaje x(500) [{a-z}, {A-Z}, {BS}] <-- “ “
+9.	Mientras repeticion == 7 entonces
+10.		Escribir ”ingrese su nombre”
+11.		Leer nombre
+12.		Escribir “Ingrese el tipo de cliente”
+13.		Leer tipoCliente
+14.		Escribir “Ingrese el costo de la computadora”
+15.		Leer costoCompu
+16.		Si tipoCliente == “Cliente tipo 1” Entonces
+17.	     		descuento <--  subtotal * 0.10
+18. 	    		 subtotal  subtotal - descuento
+19.		Sino
+20.	         		Si tipoCliente == “Cliente tipo 2” entonces
+21.	              			 descuento <--  subtotal * 0.20
+22.	  				subtotal <-- subtotal - descuento
+23.	          		Sino
+24.	               			descuento  <--  0
+25.	               			subtotal <-- subtotal 
+26.			FinSi
+27.		FinSi
+28.	mensaje <-- mensaje + Nombre + “\n” + subtotal + “\n” + “\n” tipoCliente 
+29.	repeticion <-- repeticion +1
+30.	FinMientras
+31.	Escribir mensaje
+32.	Fin

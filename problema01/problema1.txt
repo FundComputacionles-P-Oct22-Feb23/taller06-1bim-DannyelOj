@@ -1,0 +1,19 @@
+1.	Inicio
+2.	primerValor, i[0-n]
+3.	segundoValor, i[0-n]
+4.	Escribe “Ingrese primer valor”
+5.	Lee primerValor
+6.	Escribe “Ingrese segundo valor”
+7.	Lee segudoValor
+8.	Si primerValor >=1 && primerValor <=6 entonces
+9.	     Mientras primerValor == 6 entonces
+10.	     primerValorprimer Valor + 1
+11.	     FinMientras
+12.	FinSi
+13.	Si segundoValor >=10 && segundoValor <=15 entonces
+14.	     Mientras segundoValor == 15 entonces
+15.	     segundoValor <-- segundoValor r + 1
+16.	 FinMientras
+17.	FinSi
+18.	Escribir primer valor  + “ /” +  segundo valor + “\n”
+19.	Fin

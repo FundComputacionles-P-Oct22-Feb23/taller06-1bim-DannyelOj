@@ -1,0 +1,24 @@
+1.	Inicio
+2.	nombre, x(100) [{a-z}, {A-Z}, {BS}]
+3.	diasTrabajados, i[0-n]
+4.	costoDia, d[0-n]
+5.	valorCancelar, d[0-n]
+6.	mensaje, x(500) [{a-z}, {A-Z}, {BS}]  “ “
+7.	bandera, l  true
+8.	espacio,  i [0-n]   0
+9.	Mientras bandera == true entonces
+10.	     Escribir “Ingrese el nombre del empleado”
+11.	     Leer nombre
+12.	     Escribir “Ingrese el número de días trabajados”
+13.	     Leer diasTrabajados
+14.	     Escribir “Ingrese el costo del dia de trabajo”
+15.	     Leer costoDia
+16.	     valorCancelar  diasTrabajados * costoDia
+17.	     Mensaje  mensaje + nombre + “\t” + diasTrabajados + “\t” + costoDia + “\t” + valorCancelar + “\t” + “\n”
+18.	     Si espacio == 5 entonces
+19.	          espacio = espacio + 1 
+20.	          Bandera  false
+21.	     FinSi
+22.	FinMientras
+23.	Escribir mensaje
+24.	Fin

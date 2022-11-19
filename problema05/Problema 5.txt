@@ -1,0 +1,25 @@
+1.	Inicio
+2.	nombre, x(100) [{a-z}, {A-Z}, {BS}]
+3.	promedio, d[0-n]
+4.	estado, x(50) [{a-z}, {A-Z}, {BS}]
+5.	mensaje, x(500) [{a-z}, {A-Z}, {BS}] <-- “ “
+6.	bandera, l <-- true
+7.	espacio,  i [0-n] <--  0
+8.	Mientras bandera == true entonces
+9.	     Escribir “Ingrese el nombre del estudiante”
+10.	     Leer nombre
+11.	     Escribir “Ingrese el promedio del estudiante”
+12.	     Leer promedio
+13.	     Si promedio > 7 entonces
+14.	          Escribir “Aprobado”
+15.	     De lo contrario
+16.	          Escribir “Reprobado”
+17.	     FinSi
+18.	     Mensaje <-- mensaje + nombre + “\t” +  promedio + “\t” + estado + “\t” + “\n”
+19.	     Si espacio == 4 entonces
+20.	          espacio = espacio + 1 
+21.	          Bandera <-- false
+22.	     FinSi
+23.	FinMientras
+24.	Escribir mensaje
+25.	Fin

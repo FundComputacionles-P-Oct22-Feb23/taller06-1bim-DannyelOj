@@ -1,0 +1,26 @@
+1.	Inicio
+2.	nombre, x(100) [{a-z}, {A-Z}, {BS}]
+3.	posicion, x(100) [{a-z}, {A-Z}, {BS}]
+4.	edad, i[0-n]
+5.	estatura, d[0-n]
+6.	mensaje, x(500) [{a-z}, {A-Z}, {BS}] <-- “ “
+7.	bandera, l <-- true
+8.	opcion, x(1) [{a-z}, {A-Z}, {BS}]
+9.	Mientras bandera == true entonces
+10.	     Escribir “Ingrese el nombre del jugador”
+11.	     Leer nombre
+12.	     Escribir “Ingrese la posicion del jugador”
+13.	     Leer posicion
+14.	     Escribir “Ingrese la edad del jugador”
+15.	     Leer edad
+16.	     Escribir “Ingrese la estatura del jugador”
+17.	     Leer estatura
+18.	     mensaje <-- mensaje + nombre + “\t” + “-” + posición + “-,”  + “\t” + “edad” + edad + “,” + “\t” + “estatura” + estatura + “\t” + “\n”
+19.	     Escribir “Deseas terminar el proceso. Ingrese s para salir”
+20.	     Lee opcion
+21.	     Si opción == “s” entonces
+22.	          Bandera <-- false
+23.	     FinSi
+24.	FinMientras
+25.	Escribir mensaje
+26.	Fin
